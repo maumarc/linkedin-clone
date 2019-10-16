@@ -1,0 +1,22 @@
+/*!
+Author: Mauricio
+*/
+
+//BASE
+@import 'base/vars';
+
+//GLOBAL
+@import 'global/container';
+@import 'global/grid';
+@import 'global/app';
+
+//LAYOUT 
+@import 'layout/header';
+@import 'layout/footer';
+ 
+//PAGES
+@import 'pages/home';
+
+//PLUGINS
+@import 'plugins/slick-theme';
+@import 'plugins/slick';

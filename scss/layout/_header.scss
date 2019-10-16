@@ -1,0 +1,152 @@
+.header {
+    background-color: #283e4a;
+    border-top: none;
+    box-shadow: none;
+    height: 52px;
+    @media (max-width: 1024px){
+        .row{
+            height: 52px;
+        }
+        &__item{
+            display: none;
+        }
+        &__solucoes{
+            display: none;
+        }
+    }
+
+    &__logo{
+        margin-top: 4px;   
+    }
+
+    &__search {
+        &__form {
+            display: flex;
+
+            &__button {
+                height: 34px;
+                margin: 0;
+                padding: 0;
+                width: 30px;
+                border-radius: 3px 0 0 3px;
+                background-color: #e1e9ee;
+                outline: none;
+                border: none;
+                background-image: url(images/search.png);
+                background-size: 16px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                cursor: pointer;
+            }
+
+            &__input {
+                width: 260px;
+                height: 34px;
+                border-radius: 0px 3px 3px 0px;
+                border: none;
+                background-color: #e1e9ee;
+                padding: 5px;
+                outline: none;
+                font-size: 15px;
+            }
+        }
+    }
+
+    &__nav {
+        margin-left: 60px;
+
+        &__ul {
+            @media (max-width: 1024px){
+                &__item{
+                    display: none;
+                }
+            }
+            @media (min-width: 1025px) {
+                
+            
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            border-right: 1px solid #ffffffb5;
+
+            &__item {
+                height: 52px;
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                    border-bottom: 2px solid #fff;
+                }
+                &:last-child img{
+                    border-radius: 50%;
+                    border: 1px solid #ffffffb5;
+                }
+
+                &__link {
+                    text-decoration: none;
+                    color: #fff;
+                    display: flex;
+                    font-size: 13px;
+                    flex-direction: column;
+                    align-items: center;
+
+                    &__img {
+                        width: 25px;
+                        display: flex;
+                    }
+                    &__title{
+                        &__before{
+                            &::before{
+                                content: "";
+                                background: url(images/down-arrow.png);
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                                position: absolute;
+                                width: 10px;
+                                height: 10px;
+                                right: 30px;
+                                top: 34px;
+                            }
+                        }    
+                    }
+                }
+            }
+        }
+    }
+    }
+
+    &__solucoes__ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        &__item {
+            height: 52px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            &__link {
+                text-decoration: none;
+                color: #fff;
+                font-size: 13px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &__img{
+                    width: 22px;
+                }
+            }
+            &:hover {
+                border-bottom: 2px solid #fff;
+            }
+        }
+    }
+}
